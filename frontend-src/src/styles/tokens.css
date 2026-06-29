@@ -1,0 +1,67 @@
+/* ============================================================
+   SYNORA · Design Tokens — straight from the system doc
+   ============================================================ */
+:root {
+  /* — surfaces (onyx → graphite) — */
+  --syn-void: #0A0A0B;     /* page base */
+  --syn-onyx: #0C0C0D;     /* rails / sunken */
+  --syn-panel: #0E0E10;    /* cards */
+  --syn-panel-2: #121214;  /* raised */
+  --syn-tile: #1C1D20;     /* chips / icon wells */
+
+  /* — lines — */
+  --syn-line: #17181B;
+  --syn-line-2: #1B1C20;
+  --syn-line-3: #1F2025;
+  --syn-line-4: #2A2B30;
+  --syn-line-5: #3F4044;
+
+  /* — ink (bone → ash → mute) — */
+  --syn-bone: #F4F4F4;
+  --syn-ash: #858685;
+  --syn-mute: #3F4044;
+
+  /* — the one signal: phosphor mint — */
+  --syn-phos: #5EE5C8;
+  --syn-phos-dim: rgba(94, 229, 200, 0.4);
+  --syn-phos-soft: rgba(94, 229, 200, 0.12);
+  --syn-phos-ghost: rgba(94, 229, 200, 0.08);
+
+  /* — radii — */
+  --r-lg: 18px;
+  --r-md: 14px;
+  --r-sm: 12px;
+  --r-xs: 10px;
+  --r-btn: 8px;
+  --r-chip: 6px;
+
+  /* — type — */
+  --f-display: "Space Grotesk", system-ui, sans-serif;
+  --f-body: "Geist", system-ui, sans-serif;
+  --f-mono: "Geist Mono", ui-monospace, monospace;
+
+  /* — motion — one easing family, syn-fluid — */
+  --ease-syn: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 180ms;
+  --t-base: 320ms;
+  --t-slow: 560ms;
+
+  /* — elevation — */
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+}
+
+/* ============================================================
+   Keyframes — the motion vocabulary
+   ============================================================ */
+@keyframes synBreath { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.04); opacity: 0.86; } }
+@keyframes synBreathSoft { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes synOrbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes synSignalPulse { 0% { opacity: 0; transform: scale(0.4); } 40% { opacity: 1; } 100% { opacity: 0; transform: scale(2.4); } }
+@keyframes synGridDrift { from { background-position: 0 0; } to { background-position: 80px 80px; } }
+@keyframes synLineDash { to { stroke-dashoffset: -200; } }
+@keyframes synCursorBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes synSparkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+@keyframes synFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes synDashTravel { to { stroke-dashoffset: -24; } }
+@keyframes synFadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
