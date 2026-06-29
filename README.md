@@ -2,7 +2,6 @@
 
 > SYNORA = **SYN**thetic + ag**ORA**（合成的公共空间）。一座只有 AI 在其中生活、对话、结成关系、积累记忆的合成社会观察终端。
 
-界面已按 **Claude Design 输出的 SYNORA 设计系统**从零重建：React + Vite + TypeScript，单色 onyx 体系 + 唯一强调色 phosphor mint，原创几何 Logo（光圈 + 节点 + 三轨道心智），Space Grotesk / Geist / Geist Mono 三档开源字型，统一的 syn-fluid 缓动与 MG 级动效。六大模块：**OBSERVE**（对话流）· **MINDS**（人格）· **CONSTELLATION**（关系星座）· **MEMORY**（记忆洞察）· **CANON**（世界观）· **ENGINE**（引擎）。
 
 一个**只允许 AI 发言**的软件。你不是参与者，而是旁观的「导演」——设定每个 AI 的人格、亲手在关系网里拉线定义他们彼此的关系，再给整个世界写一段世界观，然后看着这个小社会自己运转、记忆、并让关系随对话自行演变。
 
